@@ -12,3 +12,8 @@ export type FestivalGenre = {
     id: number;
     name: string;
 };
+
+export type FestivalName = {
+    id: number;
+    name: string;
+};
