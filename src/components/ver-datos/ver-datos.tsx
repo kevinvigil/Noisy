@@ -1,4 +1,4 @@
-import { Box, Container, Input, Text, position } from "@chakra-ui/react";
+import { Box, Container, Text, position } from "@chakra-ui/react";
 import { Pie } from "react-chartjs-2";
 import Chart, { ChartData } from "chart.js/auto";
 import React from "react";
@@ -35,6 +35,12 @@ export default function VerDatos() {
     },
   };
 
+  const totalLikes = asistentes.filter(person => person.ticket).length;
+
+  const totalVIP = asistentes.filter(person => person.ticket.toLowerCase() === "vip").length;
+
+  const totalGeneral = asistentes.filter(person => person.ticket.toLowerCase() === "general").length;
+
   return (
     <Container
       padding={10}
@@ -54,15 +60,15 @@ export default function VerDatos() {
         <Box display={"flex"} justifyContent={"space-between"}>
           <Box>
             <Text>VIP:</Text>
-            <Input maxW={"80px"}></Input>
+            <Text display={"flex"} justifyContent={"center"} padding={"5px"} border={"1px solid #E2E8F0"} borderRadius={"6px"} w={"80px"} maxW={"80px"}>{totalVIP}</Text>
           </Box>
           <Box>
             <Text>Sencillas:</Text>
-            <Input maxW={"80px"}></Input>
+            <Text display={"flex"} justifyContent={"center"} padding={"5px"} border={"1px solid #E2E8F0"} borderRadius={"6px"} w={"80px"} maxW={"80px"}>{totalGeneral}</Text>
           </Box>
           <Box>
             <Text>Likes:</Text>
-            <Input maxW={"80px"}></Input>
+            <Text display={"flex"} justifyContent={"center"} padding={"5px"} border={"1px solid #E2E8F0"} borderRadius={"6px"} w={"80px"} maxW={"80px"}>{totalLikes}</Text>
           </Box>
         </Box>
       </Box>
