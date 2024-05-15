@@ -3,4 +3,6 @@ export interface Person {
   edad: number;
   gender: string;
   country: string;
+  ticket: string;
+  like: boolean;
 }
