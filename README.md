@@ -1,6 +1,6 @@
 # Noisy by Igrowker
 
-![Noisy Banner](https://noisy.my.canva.site/)
+![Noisy Banner](public/Noisi%20App.png)
 
 ## Descripción
 Noisy fue un proyecto web dedicado a la búsqueda de eventos musicales. En este proyecto, trabajé como Full Stack y colaboré en el desarrollo utilizando tecnologías modernas como React, Next.js y Chakra UI.
