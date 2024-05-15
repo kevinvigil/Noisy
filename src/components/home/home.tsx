@@ -7,7 +7,7 @@ import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import Festivals from "../festivals/festivals";
 import Accommodations from "../accommodation/accommodation";
-import Journeys from "../journey/share-journey";
+import Journeys from "../journey/journey";
 
 export default function Home() {
     // Este estado almacena que es lo que se debe renderizar según el usuario escoja
